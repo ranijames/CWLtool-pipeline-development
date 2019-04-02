@@ -1,0 +1,14 @@
+spladder_gtf: 
+ class: File
+ path: /cluster/work/grlab/share/CWL_pipeline/usage_examples/gencode.v19.annotation.hs37d5_chr.spladder.gtf
+spladder_dir: 
+ class: Directory
+ path: /cluster/work/grlab/projects/alva_temp/spladder/
+spladder_bams: [
+ {class: File, path: /cluster/work/grlab/projects/alva_temp/Alignment/JM-2_L1Aligned.sortedByCoord.out.bam},
+ {class: File, path: /cluster/work/grlab/projects/alva_temp/Alignment/Me275_L1Aligned.sortedByCoord.out.bam}
+]
+spladder_merge_graphs: merge_graphs
+spladder_phase2: n
+spladder_qmode: collect
+spladder_quantify_graph: y

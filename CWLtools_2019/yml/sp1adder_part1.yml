@@ -1,0 +1,21 @@
+annotation:
+ class: File
+ path: /cluster/home/thomasti/phrt_immuno/scripts/gencode.v19.annotation.hs37d5_chr.gtf
+spladder_gtf:
+ class: File
+ path: /cluster/work/grlab/share/CWL_pipeline/usage_examples/gencode.v19.annotation.hs37d5_chr.spladder.gtf
+spladder_outDir: spladder
+spladder_confidence: 2
+spladder_merge_graphs: single
+spladder_alt: alt_3prime
+spladder_RL: 100
+spladder_phase2: n
+spladder_primary_alignment: y
+spladder_pythonpath: /cluster/home/aalva/spladder/python
+samples: ref
+spladder_validate: n
+bams:
+    - class: File
+      path: /cluster/work/grlab/projects/tmp_alva/Toil_poc/Toil_ARJ/PHRT_test/Splicing/spladder/JM-2Aligned.sortedByCoord.out.bam
+    - class: File
+      path: /cluster/work/grlab/projects/tmp_alva/Toil_poc/Toil_ARJ/PHRT_test/Splicing/spladder/Me275Aligned.sortedByCoord.out.bam

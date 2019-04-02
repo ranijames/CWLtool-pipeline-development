@@ -1,0 +1,15 @@
+bams: [
+
+ {class: File, path: /cluster/work/grlab/projects/tmp_alva/SOCBIP_tmp/Splicing/spladder/JM-2Aligned.sortedByCoord.out.bam},
+ {class: File, path: /cluster/work/grlab/projects/tmp_alva/SOCBIP_tmp/Splicing/spladder/Me275Aligned.sortedByCoord.out.bam},
+]
+spladder_dir:
+ class: Directory
+ path: /cluster/work/grlab/projects/tmp_alva/SOCBIP_tmp/Splicing/spladder
+spladder_gtf:
+ class: File
+ path: /cluster/work/grlab/share/CWL_pipeline/usage_examples/gencode.v19.annotation.hs37d5_chr.spladder.gtf
+spladder_merge_graphs: merge_graphs
+spladder_phase2: n
+spladder_qmode: single
+spladder_quantify_graph: y

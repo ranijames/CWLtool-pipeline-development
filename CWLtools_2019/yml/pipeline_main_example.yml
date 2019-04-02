@@ -1,0 +1,45 @@
+reads1:  # array of type "File"
+  - class: File
+    path: /cluster/work/grlab/projects/coukos_immuno/data/20180802/fastqs/JM-2_L1_R1_001_ugGztrZAOnWJ.fastq.gz
+  - class: File
+    path: /cluster/work/grlab/projects/coukos_immuno/data/20180802/fastqs/Me275_L1_R1_001_KSb7V0YJOooV.fastq.gz
+reads2:  # array of type "File"
+  - class: File
+    path: /cluster/work/grlab/projects/coukos_immuno/data/20180802/fastqs/JM-2_L1_R2_001_8G1u1kKn2Bnq.fastq.gz
+  - class: File
+    path: /cluster/work/grlab/projects/coukos_immuno/data/20180802/fastqs/Me275_L1_R2_001_CdXkX3p8jzei.fastq.gz
+sample_names:  # array of type "File"
+  - JM-2
+  - Me275
+exp_outs:  # array of type "File"
+  - JM-2.counts
+  - Me275.counts
+genomeDir:
+  class: Directory
+  path: /cluster/work/grlab/projects/coukos_immuno/genome/hg19_hs37d5.overhang100_STAR
+sjdbGTFfile:
+  class: File
+  path: /cluster/work/grlab/projects/coukos_immuno/annotation/gencode.v28lift37.annotation.gtf
+fastqc_check_script:
+ class: File
+ path: /cluster/work/grlab/share/software/rnaseq/fastqc_check.sh
+annotation:
+ class: File
+ path: /cluster/home/thomasti/phrt_immuno/scripts/gencode.v19.annotation.hs37d5_chr.gtf
+spladder_gtf:
+ class: File
+ path: /cluster/work/grlab/share/CWL_pipeline/usage_examples/gencode.v19.annotation.hs37d5_chr.spladder.gtf
+spladder_outDir: spladder
+spladder_confidence: 2
+spladder_merge_graphs: single
+spladder_alt: alt_3prime
+spladder_RL: 100
+spladder_phase2: n
+spladder_primary_alignment: y
+spladder_pythonpath: /cluster/home/aalva/spladder/python
+samples: ref
+spladder_validate: n
+increment_out: 'sample.hdf5'
+fastqc_check_script:
+ class: File
+ path: /cluster/work/grlab/share/software/rnaseq/fastqc_check.sh

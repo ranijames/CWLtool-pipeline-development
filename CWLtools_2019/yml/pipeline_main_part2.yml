@@ -1,0 +1,36 @@
+sample: sample.hdf5
+inputs:
+ sample: File
+increment_out: 'sample.hdf5'
+incremnet_tsv:
+    - class: File
+      path: /cluster/home/aalva/Projects/PHRT-Immuno/results/counts/JM-2_L1.tsv
+    - class: File
+      path: /cluster/home/aalva/Projects/PHRT-Immuno/results/counts/Me275_L1.tsv
+spladder_gtf:
+ class: File
+ path: /cluster/work/grlab/share/CWL_pipeline/usage_examples/gencode.v19.annotation.hs37d5_chr.spladder.gtf
+spladder_bams:
+    - class: File
+      path: /cluster/work/grlab/projects/tmp_alva/Toil_poc/Toil_ARJ/PHRT_test/Splicing/spladder/JM-2Aligned.sortedByCoord.out.bam
+    - class: File
+      path: /cluster/work/grlab/projects/tmp_alva/Toil_poc/Toil_ARJ/PHRT_test/Splicing/spladder/Me275Aligned.sortedByCoord.out.bam
+spladder_confidence: 2
+spladder_merge_graphs: merge_graphs
+spladder_alt: alt_3prime
+spladder_RL: 100
+spladder_phase2: y
+spladder_primary_alignment: y
+samples: ref
+reference:
+ class: File
+ path: /cluster/work/grlab/projects/coukos_immuno/genome/hg19_hs37d5/genome.fa
+gtexJunction:
+ class: File
+ path: /cluster/work/grlab/projects/coukos_immuno/annotation/gencode.v19.annotation.hs37d5_chr.spladder.gtf
+spladder_validate: n
+spladder_pythonpath: /cluster/work/grlab/projects/PHRT_tools/spladder_tools/python
+spladder_dir:
+ class: Directory
+ path: /cluster/work/grlab/projects/tmp_alva/SOCBIP_tmp
+spladder_outDir: spladder
